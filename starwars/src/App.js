@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 //import styled from 'styled-components';
 import './App.css';
-import StarWarsChar from "./components/StarWarsCard/StarWars";
+import StarWarsChar from './components/StarWarsCard/StarWars';
 
 
 const App = () => {
@@ -13,8 +13,8 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <div className='App'>
+      <h1 className='Header'>React Wars</h1>
       <StarWarsChar/>
     </div>
   );

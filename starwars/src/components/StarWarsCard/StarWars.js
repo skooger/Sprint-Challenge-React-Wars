@@ -1,7 +1,13 @@
-import React, {useState, useEffect} from "react";
-import StarWarsCard from "./StarWarsCard";
+import React, {useState, useEffect} from 'react';
+import StarWarsCard from './StarWarsCard';
+import styled from 'styled-components';
 
+const StyledDiv = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
+`;
 
 const StarWars = () => {
 
@@ -19,10 +25,9 @@ const StarWars = () => {
       fetchData();
 
       }, []);  
-  
-      console.log(starWarsChars)
+
   return (
-    <div>
+    <StyledDiv>
       {
         starWarsChars.map((char,index) => (
           <StarWarsCard key={index}
@@ -30,7 +35,7 @@ const StarWars = () => {
 
         ))
       }
-    </div>
+    </StyledDiv>
   );
   
  
